@@ -10,9 +10,9 @@ Zhao G, Zhou B, Wang K, Jiang R, Xu M. Respond-CAM: Analyzing Deep Models for 3D
 
 * `figure_util.py`: figure generation given the CAM and input data.
 
-* `data/`: a folder for our CNN models and datasets. Now it is empty. Please download __xxxxx.tar.gz__ and put them into this folder.
+* `data/`: a folder for our CNN models and datasets. *Now it is an empty folder; the download link for our data is coming soon*.
 
-* `demo/`: a folder to demonstrate how to use our code. We take our figures and table as examples. For instance, for Figure 3 just `cd demo/` and run `python demo_for_figure_3.py`.
+* `demo/`: a folder to demonstrate how to use our code. We take our figures and table as examples. For instance, for Figure 3 just `cd demo/` and run `python demo_for_figure_3.py`. *They are unavailable until the CNN models and datasets are downloaded and put into the `data/` folder.*
 
 
 # Key prerequisites
@@ -32,6 +32,6 @@ Zhao G, Zhou B, Wang K, Jiang R, Xu M. Respond-CAM: Analyzing Deep Models for 3D
 
 # Example models and datasets
 
-__xxxxxxxxxxxxxxxxxx.tar.gz__
+*download link coming soon...*
 
 For running our demo, please download the file above.
