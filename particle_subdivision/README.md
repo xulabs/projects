@@ -10,8 +10,7 @@ https://doi.org/10.1093/bioinformatics/btx230
 https://arxiv.org/abs/1701.08404
 
 ## Network architecture
-
-![test](https://user-images.githubusercontent.com/31047726/51214221-437a9900-18eb-11e9-9f42-27fd51543f6f.jpg = 250 x)
+<img src="https://user-images.githubusercontent.com/31047726/51214221-437a9900-18eb-11e9-9f42-27fd51543f6f.jpg" width="48">
 
 
 ## Key prerequisites
