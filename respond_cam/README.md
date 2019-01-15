@@ -4,6 +4,9 @@ It is the code for the following paper:
 
 Zhao G, Zhou B, Wang K, Jiang R, Xu M. Respond-CAM: Analyzing Deep Models for 3D Imaging Data by Visualizations. Medical Image Computing & Computer Assisted Intervention (MICCAI) 2018.
 
+https://arxiv.org/abs/1806.00102
+
+
 * `cnn_models.py`: structural definations and operations of CNNs used.
 
 * `respond_cam.py`: the implementation of Respond-CAM and Grad-CAM for 2D and 3D data.
