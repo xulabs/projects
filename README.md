@@ -8,7 +8,7 @@ Nearly every major process in a cell is orchestrated by the interplay of macromo
 
 
 ## Research
-We aim to develop computational analysis techniques for processing large amount of CECT data to reconstruct, detect, classfy, recover, and spatially model different cellular components. We utilize state-of-the-art machine learning (including deep learning) techniques for developing CECT specific data analysis and modeling algorithms. Our research automates the structure discovery and will lead to new insights into basic cell biology and medical applications.
+We aim to develop computational analysis techniques for processing large amounts of CECT data to reconstruct, detect, classify, recover, and spatially model different cellular components. We utilize state-of-the-art machine learning (including deep learning) techniques for developing CECT specific data analysis and modeling algorithms. Our research automates the structure discovery and will lead to new insights into basic cell biology and medical applications.
 
 
 ![alt text](https://user-images.githubusercontent.com/31047726/51212907-aff39900-18e7-11e9-8271-19fd68ffaeed.jpg)
