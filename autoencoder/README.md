@@ -3,7 +3,7 @@ Autoencoder3D is a deep learning based framework for unsupervised clustering of 
 
 Please refer to our paper for more details:
 
-Zeng, Xiangrui, Miguel Ricardo Leung, Tzviya Zeev-Ben-Mordehai, and Min Xu. "A convolutional autoencoder approach for mining features in cellular electron cryo-tomograms and weakly supervised coarse segmentation." Journal of structural biology 202, no. 2 (2018): 150-160. doi:10.1016/j.jsb.2017.12.015
+Zeng, Xiangrui, Miguel Ricardo Leung, Tzviya Zeev-Ben-Mordehai, and Min Xu. "A convolutional autoencoder approach for mining features in cellular electron cryo-tomograms and weakly supervised coarse segmentation." Journal of structural biology 202, no. 2 (2018): 150-160. 
 
 https://doi.org/10.1016/j.jsb.2017.12.015
 
