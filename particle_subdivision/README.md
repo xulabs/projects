@@ -9,6 +9,10 @@ https://doi.org/10.1093/bioinformatics/btx230
 
 https://arxiv.org/abs/1701.08404
 
+## Network architecture
+
+![alt text](https://user-images.githubusercontent.com/31047726/51214221-437a9900-18eb-11e9-9f42-27fd51543f6f.jpg)
+
 
 ## Key prerequisites
 * [keras](https://keras.io/#installation)
@@ -33,3 +37,6 @@ pip install pypng
 ```
 git clone https://github.com/xulabs/projects.git
 ```
+
+## Example structure recovery results
+![alt text](https://user-images.githubusercontent.com/31047726/51214220-437a9900-18eb-11e9-8084-23b726f0ef96.jpg)
