@@ -10,7 +10,8 @@ https://doi.org/10.1016/j.jsb.2017.12.015
 https://arxiv.org/abs/1706.04970
 
 ## Conceptual framework
-![alt text](https://user-images.githubusercontent.com/31047726/51212908-aff39900-18e7-11e9-8dca-b0a6e089a43e.jpg)
+<img src="https://user-images.githubusercontent.com/31047726/51212908-aff39900-18e7-11e9-8dca-b0a6e089a43e.jpg" width="500">
+
 
 
 ## Key prerequisites
