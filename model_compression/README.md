@@ -10,7 +10,7 @@ https://link.springer.com/chapter/10.1007/978-3-319-93000-8_17
 https://arxiv.org/abs/1801.10597
 
 ## Knowledge distillation flowchart
-<img src="https://user-images.githubusercontent.com/31047726/51223192-e7c20700-190e-11e9-8384-ed7db0d3973c.png" width="800">
+<img src="https://user-images.githubusercontent.com/31047726/51223193-e7c20700-190e-11e9-9eb2-eaaf58aa5078.png" width="800">
 
 ## Architectures of the teacher network and student networks
 <img src="https://user-images.githubusercontent.com/31047726/51223192-e7c20700-190e-11e9-8384-ed7db0d3973c.png" width="800">
