@@ -12,4 +12,4 @@ This project was presented at Intelligent Systems for Molecular Biology (ISMB) 2
 <img src="https://user-images.githubusercontent.com/31047726/51279896-4b4e4200-19ac-11e9-89e1-7ed63757d56a.png" width="900">
 
 ## Code
-We are currently organizing the code and choosing an appropriate license. We will release the code as soon as possible. Please feel free to contact us!
+We are currently organizing and optimizing the code, and choosing an appropriate license. We will release the code as soon as possible. Please feel free to contact us!
