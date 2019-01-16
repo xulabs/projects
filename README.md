@@ -11,6 +11,6 @@ Nearly every major process in a cell is orchestrated by the interplay of macromo
 We are developing computational analysis techniques for processing large amounts of Cryo-ET data to reconstruct, detect, classify, recover, and spatially model different cellular components. We utilize state-of-the-art machine learning (including deep learning) approaches to design CECT specific data analysis and modeling algorithms. Our research automates the cellular structure discovery and will lead to new insights into the basic molecular biology and medical applications.
 
 
-![alt text](https://user-images.githubusercontent.com/31047726/51212907-aff39900-18e7-11e9-8271-19fd68ffaeed.jpg)
+![alt text](https://user-images.githubusercontent.com/31047726/51266413-3613ec00-1989-11e9-810f-f8cb4924f435.png)
 
 *De novo* structural mining pipeline results: (a). A slice of a rat neron tomogram (Wolfgang Baumeister lab),  (b). Recovered patterns (from top to bottom): mitochondrial membrane, ellipsoid of strong signals, borders of ice crystal,   TRiC-like pattern, Ribosome-like pattern, (c). Pattern mining results embedded, (d). Individual patterns embedded.
