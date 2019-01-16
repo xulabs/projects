@@ -8,7 +8,7 @@ Chang Liu, Xiangrui Zeng, Ruogu Lin, Xiaodan Liang, Zachary Freyberg, Eric Xing,
 https://arxiv.org/abs/1802.04087
 
 ## Input and output of SSN3D Network
-<img src="https://user-images.githubusercontent.com/31047726/51220271-7f6d2880-1902-11e9-80c2-02c39c0503f6.png" width="700">
+<img src="https://user-images.githubusercontent.com/31047726/51220271-7f6d2880-1902-11e9-80c2-02c39c0503f6.png" width="650">
 
 
 
