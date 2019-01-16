@@ -1,5 +1,5 @@
 # 3D-WGAN
-3D-WGAN is ...
+This is a novel image-derived approach for performing hypothesis testing for Cryo-ET subtomogram template matching by constructing generative models using the generative adversarial network.
 
 Please refer to our paper for more details:
 
