@@ -1,4 +1,4 @@
-# FAML algorithm for subtomogram averaging
+## FAML algorithm for subtomogram averaging
 FAML (fast alignment maximum-likelihood) algoirthm integrates the fast alignment approach and maximum-likelihood approach to perform fast and robust subtomogram averaging and classification.
 
 More details in our paper:
