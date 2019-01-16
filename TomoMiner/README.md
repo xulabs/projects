@@ -8,7 +8,7 @@ https://github.com/alberlab/tomominer
 
 ## Template-free Classification of 100,000 Subtomogram
 
-<img src="https://user-images.githubusercontent.com/31047726/51218869-45992380-18fc-11e9-83dc-e154c35594aa.jpg" width="800">
+<img src="https://user-images.githubusercontent.com/31047726/51219263-0ff53a00-18fe-11e9-998a-ce17e2ddf205.png" width="600">
 
 ## References
 ### TomoMiner
