@@ -6,8 +6,6 @@ import tensorflow as tf
 
 import keras
 from keras import optimizers, metrics
-# from keras.layers.core import Activation
-# from keras.layers import Input, Dense, Conv3D, MaxPooling3D, UpSampling3D, Cropping3D,Dropout,Add,Reshape, BatchNormalization
 from keras.models import Sequential, Model, load_model
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint
