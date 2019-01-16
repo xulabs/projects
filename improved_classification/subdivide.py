@@ -8,58 +8,6 @@ from keras.layers import Input, Dense, Conv3D, Convolution3D, MaxPooling3D, merg
 from keras.layers.merge import concatenate
 import keras.models as KM
 
-## Inception3D
-def inception_0(image_size, num_labels):
-    num_channels=1
-    inputs = Input(shape = (image_size, image_size, image_size, num_channels))
-
-    m = Convolution3D(32, 5, 5, 5, subsample=(1, 1, 1), activation='relu', border_mode='valid', input_shape=())(inputs)
-    m = MaxPooling3D(pool_size=(2, 2, 2), strides=None, border_mode='same')(m)
-
-    # inception module 0
-    branch1x1 = Convolution3D(32, 1, 1, 1, subsample=(1, 1, 1), activation='relu', border_mode='same')(m)
-    branch3x3_reduce = Convolution3D(32, 1, 1, 1, subsample=(1, 1, 1), activation='relu', border_mode='same')(m)
-    branch3x3 = Convolution3D(64, 3, 3, 3, subsample=(1, 1, 1), activation='relu', border_mode='same')(branch3x3_reduce)
-    branch5x5_reduce = Convolution3D(16, 1, 1, 1, subsample=(1, 1, 1), activation='relu', border_mode='same')(m)
-    branch5x5 = Convolution3D(32, 5, 5, 5, subsample=(1, 1, 1), activation='relu', border_mode='same')(branch5x5_reduce)
-    branch_pool = MaxPooling3D(pool_size=(2, 2, 2), strides=(1, 1, 1), border_mode='same')(m)
-    branch_pool_proj = Convolution3D(32, 1, 1, 1, subsample=(1, 1, 1), activation='relu', border_mode='same')(branch_pool)
-    m = merge([branch1x1, branch3x3, branch5x5, branch_pool_proj], mode='concat', concat_axis=-1)
-
-    m = AveragePooling3D(pool_size=(2, 2, 2), strides=(1, 1, 1), border_mode='valid')(m)
-    m = Flatten()(m)
-    m = Dropout(0.7)(m)
-
-    # expliciately seperate Dense and Activation layers in order for projecting to structural feature space
-    m = Dense(num_labels, activation='linear')(m)
-    m = Activation('softmax')(m)
-
-    mod = KM.Model(input=inputs, output=m)
-
-    return mod
-## DSRF3D
-def vgg_0(image_size, num_labels):
-    num_channels=1
-    inputs = Input(shape = (image_size, image_size, image_size, num_channels))
-
-    # modified VGG19 architecture
-    bn_axis = 3
-    m = Convolution3D(32, 3, 3, 3, activation='relu', border_mode='same')(inputs)
-    m = Convolution3D(32, 3, 3, 3, activation='relu', border_mode='same')(m)
-    m = MaxPooling3D(pool_size=(2, 2, 2), strides=(2, 2, 2))(m)
-
-    m = Convolution3D(64, 3, 3, 3, activation='relu', border_mode='same')(m)
-    m = Convolution3D(64, 3, 3, 3, activation='relu', border_mode='same')(m)
-    m = MaxPooling3D(pool_size=(2, 2, 2), strides=(2, 2, 2))(m)
-
-    m = Flatten(name='flatten')(m)
-    m = Dense(512, activation='relu', name='fc1')(m)
-    m = Dense(512, activation='relu', name='fc2')(m)
-    m = Dense(num_labels, activation='softmax')(m)
-
-    mod = KM.Model(input=inputs, output=m)
-
-    return mod
 
 ## Chengqian
 ## VGG 19 modified---Cgg
@@ -300,23 +248,5 @@ def list_to_data(dj,imagedb, pdb_id_map=None):
 
 
 
-# %reset -f
-if __name__ == "__main__":
-    import pickle
-    from lsm_db import LSM
-    dconfig = LSM('/shared/shared/subdivide/data/subtomograms/data_config.db')
-    imagedb = LSM('/shared/shared/subdivide/data/subtomograms/image_db.db')
-    stat = LSM('/shared/shared/subdivide/data/subtomograms/stat.db')   
-    checker = True
-    for config in dconfig.keys():
-        dj = dconfig[config]['dj']
-        pdb_id_map = pdb_id_label_map([_['pdb_id'] for _ in dj]) 
-        #model = vgg_0(image_size = stat['op']['size'], num_labels=len(pdb_id_map))
 
-
-        model = c3d(image_size = stat['op']['size'], num_labels = len(pdb_id_map))
-        #if checker == True:
-        compile(model)
-            #checker = False
-        train_validation(model=model, dj=dj,imagedb = imagedb,  pdb_id_map=pdb_id_map, nb_epoch=20, validation_split=0.2)
         
