@@ -2,6 +2,7 @@
 FAML (fast alignment maximum-likelihood) algoirthm integrates the fast alignment approach and maximum-likelihood approach to perform fast and robust subtomogram averaging and classification.
 
 More details in our paper:
+
 Yixiu Zhao, Xiangrui Zeng, Qiang Guo, Min Xu; An integration of fast alignment and maximum-likelihood methods for electron subtomogram averaging and classification, Bioinformatics, Volume 34, Issue 13, 1 July 2018, Pages i227–i236, https://doi.org/10.1093/bioinformatics/bty267
 
 https://arxiv.org/abs/1804.01203
