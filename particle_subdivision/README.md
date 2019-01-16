@@ -1,4 +1,4 @@
-# Inception3D and DSRF3D network for subtomogram particle subdivision
+## Inception3D and DSRF3D network for subtomogram particle subdivision
 The two networks perform deep learning based classification of Cellular Electron Cryo Tomography subtomogram data
 
 Please refer to our paper for more details:
