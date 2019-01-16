@@ -8,7 +8,7 @@ Chang  Liu,  Xiangrui  Zeng,  Kaiwen  Wang,  Qiang  Guo,  and  Min  Xu. Multi-ta
 https://arxiv.org/abs/1805.06332
 
 ## Conceptual framework
-<img src="https://user-images.githubusercontent.com/31047726/51220703-55b50100-1904-11e9-8be3-45bb9ed36995.png" width="400">
+<img src="https://user-images.githubusercontent.com/31047726/51220703-55b50100-1904-11e9-8be3-45bb9ed36995.png" width="800">
 
 ## Note
 We are currently organizing the code and will release it soon.
