@@ -1,4 +1,4 @@
-## Xulab projects at Carnegie Mellon Univeristy Computational Department
+# Xulab at Carnegie Mellon Univeristy Computational Department
 Code and data for projects developped at Xu Lab
 
 The research related to the code and data can be found at http://cs.cmu.edu/~mxu1
