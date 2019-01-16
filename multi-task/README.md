@@ -25,10 +25,7 @@ pip install numpy
 ```
 pip install scipy
 ```
-* pypng
-```
-pip install pypng
-```
+
 
 
 
