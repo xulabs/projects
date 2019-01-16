@@ -18,7 +18,7 @@ https://arxiv.org/abs/1806.00102
 * `demo/`: a folder to demonstrate how to use our code. We take our figures and table as examples. For instance, for Figure 3 just `cd demo/` and run `python demo_for_figure_3.py`. *They are unavailable until the CNN models and datasets are downloaded and put into the `data/` folder.*
 
 # Walk-through
-<img src="https://user-images.githubusercontent.com/31047726/51214222-437a9900-18eb-11e9-877d-2360bc068cdb.jpg" width="1000">
+<img src="https://user-images.githubusercontent.com/31047726/51214222-437a9900-18eb-11e9-877d-2360bc068cdb.jpg" width="900">
 
 
 # Key prerequisites
