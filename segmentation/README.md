@@ -20,14 +20,7 @@ https://arxiv.org/abs/1802.04087
 pip install numpy
 ```
 
-* scipy
-```
-pip install scipy
-```
-* pypng
-```
-pip install pypng
-```
+
 
 
 
