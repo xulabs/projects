@@ -13,11 +13,13 @@ https://arxiv.org/abs/1801.10597
 <img src="https://user-images.githubusercontent.com/31047726/51223193-e7c20700-190e-11e9-9eb2-eaaf58aa5078.png" width="700">
 
 ## Architectures of the teacher network and student networks
+
+models.py contains the code using the keras platform to construct the teacher network and studnet networks.
+
 <img src="https://user-images.githubusercontent.com/31047726/51223192-e7c20700-190e-11e9-8384-ed7db0d3973c.png" width="700">
 
 
 ## Key prerequisites
-* [EMAN2](http://blake.bcm.edu/emanwiki/EMAN2/Install)
 * [keras](https://keras.io/#installation)
 * [tensorflow-gpu](https://www.tensorflow.org/install/)
 * numpy
@@ -25,14 +27,7 @@ https://arxiv.org/abs/1801.10597
 pip install numpy
 ```
 
-* scipy
-```
-pip install scipy
-```
-* pypng
-```
-pip install pypng
-```
+
 
 
 
