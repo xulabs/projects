@@ -13,4 +13,4 @@ We are developing computational analysis techniques for processing large amounts
 
 <img src="https://user-images.githubusercontent.com/31047726/51266413-3613ec00-1989-11e9-810f-f8cb4924f435.png">
 
-*De novo* structural mining pipeline results: (a). A slice of a rat neron tomogram (Wolfgang Baumeister lab),  (b). Recovered patterns (from top to bottom): mitochondrial membrane, ellipsoid of strong signals, borders of ice crystal,   TRiC-like pattern, Ribosome-like pattern, (c). Pattern mining results embedded, (d). Individual patterns embedded.
+*De novo* structural mining pipeline results: (a). A slice of a rat neron tomogram (Wolfgang Baumeister lab),  (b). Recovered patterns (from left to right): mitochondrial membrane, Ribosome-like pattern, ellipsoid of strong signals, TRiC-like pattern, borders of ice crystal, (c). Pattern mining results embedded, (d). Individual patterns embedded.
