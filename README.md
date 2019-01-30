@@ -8,7 +8,7 @@ Nearly every major process in a cell is orchestrated by the interplay of macromo
 
 
 ### Research
-We are developing computational analysis techniques for processing large amounts of Cryo-ET data to reconstruct, detect, classify, recover, and spatially model different cellular components. We utilize state-of-the-art machine learning (including deep learning) approaches to design CECT specific data analysis and modeling algorithms. Our research automates the cellular structure discovery and will lead to new insights into the basic molecular biology and medical applications.
+We are developing computational analysis techniques for processing large amounts of Cryo-ET data to reconstruct, detect, classify, recover, and spatially model different cellular components. We utilize state-of-the-art machine learning (including deep learning) approaches to design Cryo-ET specific data analysis and modeling algorithms. Our research automates the cellular structure discovery and will lead to new insights into the basic molecular biology and medical applications.
 
 
 <img src="https://user-images.githubusercontent.com/31047726/51266413-3613ec00-1989-11e9-810f-f8cb4924f435.png">
