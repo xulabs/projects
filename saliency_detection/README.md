@@ -3,7 +3,7 @@ This ongoing research project is a saliency-based structural region detection me
 
 Preliminary paper:
 
-Bo  Zhou,  Qiang  Guo,  Xiangrui  Zeng,  and  Min  Xu.  Feature  decomposition  based  saliency detection in electron cryo-tomograms. IEEE International Conference on Bioinformatics & Biomedicine (BIBM), 2019. 
+Bo  Zhou,  Qiang  Guo,  Xiangrui  Zeng,  and  Min  Xu.  Feature  decomposition  based  saliency detection in electron cryo-tomograms. IEEE International Conference on Bioinformatics & Biomedicine (BIBM), 2018. 
 
 https://arxiv.org/abs/1801.10562
 
