@@ -9,7 +9,8 @@ Please cite the above paper when this code is used or adapted for your research.
 
 '''
 
-import EMAN2 as E
+#import EMAN2 as E
+import mrcfile
 import scipy.ndimage as SN
 import scipy.ndimage.filters as SNF
 import gc as GC
@@ -37,13 +38,18 @@ def em2numpy(ve):
 '''
 read mrc 3D image file into a numpy 3D array
 '''
-def read_mrc_numpy_vol(path):
+def read_mrc_numpy_vol_(path):
     ve = E.EMData(str(path))
     v = em2numpy(ve)
     v = v.astype(N.float32)
     del ve      # to prevent memory leak
     return v
 
+def read_mrc_numpy_vol(path):
+    with mrcfile.open(path) as mrc:
+        v = mrc.data
+        v = v.astype(N.float32)
+    return v
 
 
 # 3D gaussian filtering of a volume (v)
