@@ -15,7 +15,7 @@ https://arxiv.org/abs/1706.04970
 
 
 ## Key prerequisites
-* [EMAN2](http://blake.bcm.edu/emanwiki/EMAN2/Install)
+* [EMAN2](http://blake.bcm.edu/emanwiki/EMAN2/Install) (optional as of Feb 2019)
 * [keras](https://keras.io/#installation)
 * [tensorflow-gpu](https://www.tensorflow.org/install/)
 * numpy
