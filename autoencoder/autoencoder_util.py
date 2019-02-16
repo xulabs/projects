@@ -48,7 +48,7 @@ def read_mrc_numpy_vol_(path):
 def read_mrc_numpy_vol(path):
     with mrcfile.open(path) as mrc:
         v = mrc.data
-        v = v.astype(N.float32)
+        v = v.astype(N.float32).transpose([2,1,0])
     return v
 
 
