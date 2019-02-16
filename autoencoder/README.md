@@ -32,6 +32,11 @@ pip install scipy
 pip install pypng
 ```
 
+* mrcfile
+```
+pip install mrcfile
+```
+
 
 
 ## Installation 
