@@ -9,7 +9,7 @@ import swig_frm
 from vol2sf import vol2sf
 
 
-def foster_transform_single_vol1(vol1, mask):
+def transform_single_vol(vol1, mask):
     from pytom_volume import sum
     from pytom.basic.correlation import meanValueUnderMask, stdValueUnderMask, meanUnderMask, stdUnderMask
     
@@ -129,12 +129,12 @@ def sag_fine_grained_alignment(vf, wf, vg, wg, max_freq, ang=[0,0,0], loc=[0,0,0
             
             vg2 = wf.apply(vg2) 
             vg2 = lowpassFilter(vg2, max_freq, max_freq/10.)[0]
-            vg2_s = foster_transform_single_vol1(vg2, mask2) 
+            vg2_s = transform_single_vol(vg2, mask2) 
 
             vf2 = shift(vf, -loc[0]+vf.sizeX()/2, -loc[1]+vf.sizeY()/2, -loc[2]+vf.sizeZ()/2, imethod='spline')
             vf2 = lowpassFilter(vf2, max_freq, max_freq/10.)[0]
             vf2 = wg.apply(vf2, Rotation(ang))
-            vf2_s = foster_transform_single_vol1(vf2, mask2)
+            vf2_s = transform_single_vol(vf2, mask2)
             
             i = 0 
             ri = np.sum(vol2npy(vf2_s)[i:i+B,:,:] - vol2npy(vg2_s)[i:i+B,:,:]) 
@@ -153,14 +153,14 @@ def sag_fine_grained_alignment(vf, wf, vg, wg, max_freq, ang=[0,0,0], loc=[0,0,0
                 rotateSpline(mask,mask2_p,angle[0],angle[1],angle[2])
                 vg2_p = wf.apply(vg2_p) 
                 vg2_p = lowpassFilter(vg2_p, max_freq, max_freq/10.)[0]
-                vg2_pf = foster_transform_single_vol1(vg2_p, mask2_p) 
+                vg2_pf = transform_single_vol(vg2_p, mask2_p) 
 
                 angle = ang - ang_epsilon_t
                 rotateSpline(vg,vg2_m,angle[0],angle[1],angle[2]) 
                 rotateSpline(mask,mask2_m,angle[0],angle[1],angle[2])
                 vg2_m = wf.apply(vg2_m) 
                 vg2_m = lowpassFilter(vg2_m, max_freq, max_freq/10.)[0]
-                vg2_mf = foster_transform_single_vol1(vg2_m, mask2_m) 
+                vg2_mf = transform_single_vol(vg2_m, mask2_m) 
 
                 vg2_ang_deri = (vg2_pf - vg2_mf) / (2*ang_epsilon[dim_i])
                 vg2_ang_deri_n = vol2npy(vg2_ang_deri)
@@ -190,8 +190,8 @@ def sag_fine_grained_alignment(vf, wf, vg, wg, max_freq, ang=[0,0,0], loc=[0,0,0
                 vf1_tm = lowpassFilter(vf1_tm, max_freq, max_freq/10.)[0]
                 vf1_tm = wg.apply(vf1_tm, Rotation(ang_f))
 
-                vf1_tpf = foster_transform_single_vol1(vf1_tp,mask2)
-                vf1_tmf = foster_transform_single_vol1(vf1_tm,mask2)
+                vf1_tpf = transform_single_vol(vf1_tp,mask2)
+                vf1_tmf = transform_single_vol(vf1_tm,mask2)
                 vf1_loc_deri = (vf1_tpf - vf1_tmf) / (2*ang_epsilon[dim_i])
                 vf1_loc_deri_n = vol2npy(vf1_loc_deri)
                 deri[dim_i+3] = np.sum(vf1_loc_deri_n[i:i+B,:,:])
@@ -223,12 +223,12 @@ def sag_fine_grained_alignment(vf, wf, vg, wg, max_freq, ang=[0,0,0], loc=[0,0,0
         
         vg2 = wf.apply(vg2) 
         vg2 = lowpassFilter(vg2, max_freq, max_freq/10.)[0]
-        vg2_s = foster_transform_single_vol1(vg2, mask2) 
+        vg2_s = transform_single_vol(vg2, mask2) 
 
         vf2 = shift(vf, -loc[0]+vf.sizeX()/2, -loc[1]+vf.sizeY()/2, -loc[2]+vf.sizeZ()/2, imethod='spline')
         vf2 = lowpassFilter(vf2, max_freq, max_freq/10.)[0]
         vf2 = wg.apply(vf2, Rotation(ang))
-        vf2_s = foster_transform_single_vol1(vf2, mask2)
+        vf2_s = transform_single_vol(vf2, mask2)
         ri = np.sum(vol2npy(vf2_s)[i:i+B,:,:] - vol2npy(vg2_s)[i:i+B,:,:]) 
         from pytom.basic.correlation import nxcc
         val = nxcc(vf2_s, vg2_s, mask)
