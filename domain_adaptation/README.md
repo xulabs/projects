@@ -6,7 +6,7 @@ Please refer to our paper for more details:
 Lin, Ruogu, Zeng, Xiangrui, Kitani, Kris, Xu, Min. "Adversarial domain adaptation for cross data source macromolecule *in situ*  structural classification in cellular electron cryo-tomograms"
 
 To run the code, please follow these steps:
-1. Data preparation: Our model is designed for 3D subtomogram data. To run the code, you need to prepare source and target data in size as (N,x,y,z) and Label in size as (N,). You can see our sample data for details. 
+1. Data preparation: Our model is designed for 3D subtomogram data. To run the code, you need to prepare source and target data in size as (N,40,40,40) and Label in size as (N,). You can see our sample data for details. Other input data size may or may not need to modify the network structure to fit in. 
 2. Hyperparameter choose: You need to pick up some hyper parameters such as batchsize and learning rate. You can use arguments to set up or just modify train.py for them.
 3. Run train.py
 
