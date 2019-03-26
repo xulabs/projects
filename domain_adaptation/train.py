@@ -148,7 +148,7 @@ def list_to_data(dj, pdb_id_map=None):
 
 def main(args):
     
-    with open("/home/ruogu_lin/data/source_sample.pickle", "rb") as f:
+    with open("SA_0_5.pickle", "rb") as f:
         u = pickle.Unpickler(f)
         u.encoding = 'latin1'
         d = u.load()
@@ -157,7 +157,7 @@ def main(args):
 
     pdb_id_map = pdb_id_label_map([_['pdb_id'] for _ in d])
     dat = list_to_data(d, pdb_id_map)
-    x = dat['data'].reshape(3000,1,40,40,40)
+    x = dat['data'].reshape(150,1,40,40,40)
     y = dat['labels']
     source = chainer.datasets.TupleDataset(x, y)
 
@@ -165,7 +165,7 @@ def main(args):
     source_train = source
     source_test = source
     
-    with open("/home/ruogu_lin/data/target_sample.pickle", "rb") as f:
+    with open("SB_0_5.pickle", "rb") as f:
         u = pickle.Unpickler(f)
         u.encoding = 'latin1'
         d = u.load()
@@ -174,7 +174,7 @@ def main(args):
 
     pdb_id_map = pdb_id_label_map([_['pdb_id'] for _ in d])
     dat = list_to_data(d, pdb_id_map)
-    x = dat['data'].reshape(3000,1,40,40,40)
+    x = dat['data'].reshape(150,1,40,40,40)
     y = dat['labels'].astype(np.int32)
     target = chainer.datasets.TupleDataset(x, y)
     
