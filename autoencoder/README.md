@@ -12,6 +12,7 @@ https://arxiv.org/abs/1706.04970
 <img src="https://user-images.githubusercontent.com/31047726/53054371-28fb8880-3472-11e9-9a1b-5608edc9127b.png">
 
 Unsupervised visual proteaomics using the autoencoder. Patterns: (1) yellow: membrane, (2) red: ribosome-like, (3) blue: interaction pattern with ribosome-like globule, (4) pink: interaction pattern with membrane, (5) brown: other multi-particle interaction pattern, (6) green: small globule.
+
 =======
 
 ## Conceptual framework
