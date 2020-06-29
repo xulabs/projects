@@ -9,12 +9,10 @@ https://doi.org/10.1016/j.jsb.2017.12.015
 
 https://arxiv.org/abs/1706.04970
 
-<<<<<<< HEAD
 <img src="https://user-images.githubusercontent.com/31047726/53054371-28fb8880-3472-11e9-9a1b-5608edc9127b.png">
 
 Unsupervised visual proteaomics using the autoencoder. Patterns: (1) yellow: membrane, (2) red: ribosome-like, (3) blue: interaction pattern with ribosome-like globule, (4) pink: interaction pattern with membrane, (5) brown: other multi-particle interaction pattern, (6) green: small globule.
 =======
->>>>>>> b081a5b7013076b3c8852b4269d80d2a14a8e988
 
 ## Conceptual framework
 <img src="https://user-images.githubusercontent.com/31047726/51212908-aff39900-18e7-11e9-8dca-b0a6e089a43e.jpg" width="400">
@@ -53,11 +51,8 @@ git clone https://github.com/xulabs/projects.git
 
 
 ## Example dataset
-<<<<<<< HEAD
-http://xulab-gpu0.pc.cc.cmu.edu/d38122b6-cca3-11e7-9e38-a32bc9f19922/autoencoder/example.tgz
-=======
-http://xulab-gpu0.pc.cs.cmu.edu/d38122b6-cca3-11e7-9e38-a32bc9f19922/autoencoder/example.tgz
->>>>>>> b081a5b7013076b3c8852b4269d80d2a14a8e988
+
+https://cmu.box.com/s/6hqji5j7vgi9jprpm2rve2yvbju02tej
 
 Please download this dataset and extract it into your working directory. 
 
