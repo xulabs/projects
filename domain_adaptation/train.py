@@ -14,7 +14,6 @@ from chainer import optimizers, serializers
 from chainer.functions.evaluation import accuracy
 from chainer.training import extensions
 from chainer.datasets import tuple_dataset
-from chainercv.datasets import TransformDataset
 from chainercv.visualizations import vis_image
 from c3dmodels import Loss, Discriminator
 from updater import ADDAUpdater
