@@ -217,7 +217,8 @@ def vol_to_image_stack(vs):
 
     sample_data = N.zeros((sample_size, image_size, image_size, image_size, num_channels), dtype=N.float32)
 
-    for i,v in enumerate(vs):        sample_data[i, :, :, :, 0] = v
+    for i,v in enumerate(vs):
+        sample_data[i, :, :, :, 0] = v
 
     return sample_data
 
@@ -232,7 +233,7 @@ def list_to_data(dj,imagedb, pdb_id_map=None):
     vs = [None]*len(dj)
     labels = [None]*len(dj)
     for i,n in enumerate(dj):
-	vs[i] = imagedb[n['subtomogram']]
+        vs[i] = imagedb[n['subtomogram']]
         if pdb_id_map is not None:
             labels[i] = pdb_id_map[n['pdb_id']]
     re['data'] = vol_to_image_stack(vs = vs)
@@ -244,9 +245,3 @@ def list_to_data(dj,imagedb, pdb_id_map=None):
         re['labels'] = labels
 
     return re
-
-
-
-
-
-        
