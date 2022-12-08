@@ -46,3 +46,7 @@ train U_Net segmentation model
 ```
 python main.py
 ```
+applying densecrf for post-processing
+```
+python CRF.py
+```
