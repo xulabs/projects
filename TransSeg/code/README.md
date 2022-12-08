@@ -31,6 +31,12 @@ image
 * pillow>=9.0.1
 * opencv>=4.5.5
 
+### Data
+The data is available at https://github.com/opnumten/single_cell_segmentation. Please refer to the paper 
+doi:10.1016/j.compbiomed.2019.04.006 Wang et al, Learn to Segment Single Cells with Deep Distance Estimator 
+and Deep Cell Detector for more information.
+
+
 ### Training
 train CycleGAN model for data generation
 ```
